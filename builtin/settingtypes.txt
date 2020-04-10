@@ -903,8 +903,9 @@ fallback_font_shadow_alpha (Fallback font shadow alpha) int 128 0 255
 #    This font will be used for certain languages or if the default font is unavailable.
 fallback_font_path (Fallback font path) filepath fonts/DroidSansFallbackFull.ttf
 
-#    Path to save screenshots at.
-screenshot_path (Screenshot folder) path
+#    Path to save screenshots at. Can be an absolute or relative path.
+#    The folder will be created if it doesn't already exist.
+screenshot_path (Screenshot folder) path screenshots
 
 #    Format of screenshots.
 screenshot_format (Screenshot format) enum png png,jpg,bmp,pcx,ppm,tga
@@ -1372,7 +1373,7 @@ name (Player name) string
 
 #    Set the language. Leave empty to use the system language.
 #    A restart is required after changing this.
-language (Language) enum   ,ar,ca,cs,da,de,dv,el,eo,es,et,eu,fil,fr,hu,id,it,ja,ja_KS,jbo,kk,kn,lo,lt,ms,my,nb,nl,nn,pl,pt,pt_BR,ro,ru,sl,sr_Cyrl,sv,sw,th,tr,uk,vi
+language (Language) enum   ,ar,ca,cs,da,de,dv,el,en,eo,es,et,eu,fil,fr,hu,id,it,ja,ja_KS,jbo,kk,kn,lo,lt,ms,my,nb,nl,nn,pl,pt,pt_BR,ro,ru,sl,sr_Cyrl,sv,sw,th,tr,uk,vi
 
 #    Level of logging to be written to debug.txt:
 #    -    <nothing> (no logging)
